@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Devis</title>
+
+    <!-- Inclusion des scripts pour jspdf et autotable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+
+    <!-- Inclusion du fichier CSS -->
+    <link rel="stylesheet" href="Vue/Css/devis1.css">
+
+</head>
+<body>
+    <div class="page" id="page">
+        <!-- Menu principal -->
+        <div class="Principale"> 
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Prestations.html">Prestations</a></li>
+                <li><a href="Produits.html">Produits</a></li>
+                <li><a href="#">Devis</a></li>
+                <li><a href="Contact.html">Contact</a></li> 
+                
+            </ul> 
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">Shine<span>Auto</span></a> 
+        </div>  
+
+        <!-- Titre de la page -->
+        <h1>Demande de Devis</h1>
+
+        <!-- Formulaire de demande de devis -->
+        <form id="formulaire">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="mail">Mail :</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="choix">Choisissez une option :</label>
+            <select id="choix" name="choix" required onchange="afficherOptions()">
+                <option value="">--Sélectionnez--</option>
+                <option value="produit">Produit</option>
+                <option value="prestation">Prestation</option>
+            </select>
+
+            <div id="optionSupplementaire"></div>
+
+            <!-- Boutons pour soumettre ou réinitialiser le formulaire -->
+            <button type="submit">Générer le Devis PDF</button>
+            <button type="button" onclick="resetForm()">Réinitialiser le formulaire</button>
+        </form>
+
+        <!-- Contenu pour l'affichage du devis généré -->
+        <div id="proforma"></div>
+
+        <!-- Inclusion du fichier JavaScript -->
+        <script src="Vue/Js/devis1.js"></script>
+
+        <!-- Pied de page -->
+        <footer>
+            <p>&copy; 2024 ShineAuto. Tous droits réservés.</p>
+        </footer>
+    </div>
+</body>
+</html>
+

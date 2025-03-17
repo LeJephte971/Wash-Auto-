@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"window.closeWhenEmpty": true,
+		"scm.defaultViewSortKey": "name",
+		"workbench.editor.sharedViewState": true,
+		"liveServer.settings.port": 5501
+	}
+}

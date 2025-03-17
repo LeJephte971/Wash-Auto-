@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits</title>
+    <link rel="stylesheet" href="Vue/Css/Produits.css"> <!-- Lien vers le fichier CSS -->
+    
+
+</head>
+<body>
+<div class="page" id="page">
+    <header>
+        <div class="Principale"> 
+            <div class="logo">
+                <a href="index.html"> Shine<samp>Auto</samp></a> 
+            </div>
+            <ul>
+                <li class="active"><a href="index.html"> Home</a></li>
+                <li><a href="Prestations.html"> Prestations </a></li>
+                <li><a href="#"> Produits</a></li>
+                <li><a href="devis1.html"> Devis </a></li>
+                <li><a href="Contact.html"> Contact</a></li> 
+                
+            </ul> 
+        </div>
+        <div class="cart" id="cart">
+            <h3>Panier</h3>
+            <ul id="cart-items"></ul>
+            <p>Total : <span id="cart-total">0.00€</span></p>
+            <button onclick="checkout()">Passer à la caisse</button>
+        </div>
+        <div class="Titre">
+           <h1> Nos Produits</h1>
+        </div>
+    <div data-aos="fade-down">
+       <div class="container">
+        <div class="product-card">
+            
+            <div class="product-info">
+                <h2> Pack Normal</h2>
+                <p><strong>Caractéristiques:</strong> Le coffret lavage normal, permet un lavage simple pour l’extérieur de votre véhicule. 
+                  Il est composé de :
+                  - Bouteille de savon ultra moussant
+                  - Éponge désincrustante
+                  - Peau de chamois.</p>
+                <p><strong>Description :</strong> Sous réserve de stock disponible. 
+                  Pas de livraison possible, passez en magasin.</p>
+                  <p class="price">12,00€</p>
+                <button class="btn" onclick="addToCart('Pack Normal', 12.00)">Acheter</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+           
+            <div class="product-info">
+                <h2> Pack Prémium</h2>
+                <p><strong>Caractéristiques:</strong> Le coffret lavage prémium, permet un lavage efficace pour l’extérieur de votre véhicule. 
+                  Il est composé de : 
+                  - Bouteille de savon ultra moussant 
+                  - Éponge désincrustante
+                  - Peau de chamois 
+                  - Pulvérisateur lustrage déperlant
+                  - Micro fibre.</p>
+                <p><strong>Description :</strong> Sous réserve de stock disponible. 
+                  Pas de livraison possible, passez en magasin.</p>
+                <p class="price">21,00€</p>
+                <button class="btn" onclick="addToCart('Pack Prémium', 21.00)">Acheter</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+           
+            <div class="product-info">
+                <h2> Pack Exclusif</h2>
+                <p><strong>Caractéristiques:</strong> Le coffret lavage exclusif, permet un lavage total pour l’extérieur de votre véhicule pour une 
+                  durabilité maximale. 
+                  Il est composé de : 
+                  - Bouteille de savon ultra moussant
+                  - Éponge désincrustante 
+                  - Peau de chamois 
+                  - Pulvérisateur lustrage déperlant 
+                  - Micro fibre 
+                  - Cire lustrante 
+                  - Patin d’application de cire.</p>
+                <p><strong>Description :</strong> Sous réserve de stock disponible. 
+                  Pas de livraison possible, passez en magasin.</p>
+                <p class="price">35,00€</p>
+                <button class="btn" onclick="addToCart('Pack Exclusif', 35.00)">Acheter</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            
+            <div class="product-info">
+                <h2> Bouteille de savon ultra moussant </h2>
+                <p><strong>Caractéristiques:</strong> Ce savon vous permet la décontamination votre carrosserie et la désincrustation de salissures et 
+                    goudron. </p>
+                <p><strong>Description :</strong> Sous réserve de stock disponible. 
+                  Pas de livraison possible, passez en magasin.</p>
+                <p class="price">7.00€</p>
+                <button class="btn" onclick="addToCart('Bouteille de savon ultra moussant', 7.00)">Acheter</button>
+            </div>
+        </div>
+       
+
+       <div class="product-card">
+            
+            <div class="product-info">
+                <h2> Pulvérisateur lustrant déperlant</h2>
+                <p><strong>Caractéristiques:</strong> Grace à a ce pulvérisateur les salissures adhèrent moins à la carrosserie et évite les traces de 
+                    calcaire.</p>
+                <p><strong>Description :</strong>Sous réserve de stock disponible. 
+                    Pas de livraison possible, passez en magasin.</p>
+                <p class="price">5,00€</p>
+                <button class="btn" onclick="addToCart(' Pulvérisateur lustrant déperlant', 5.00)">Acheter</button>
+            </div>
+        </div>
+    
+    
+       <div class="product-card">
+            
+            <div class="product-info">
+                <h2> Cire lustrante</h2>
+                <p><strong>Caractéristiques:</strong> Cette cire s’applique sur une carrosserie sèche et permet une brillance extreme.</p>
+                <p><strong>Description :</strong> Sous réserve de stock disponible. 
+                  Pas de livraison possible, passez en magasin.</p>
+                <p class="price">17,00€</p>
+                <button class="btn" onclick="addToCart('Cire lustrante', 17.00)">Acheter</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>À Propos</h3>
+                <p>
+                    ShineAuto est votre centre de lavage de véhicules haut de gamme. Nous proposons
+                    des services exclusifs pour maintenir vos véhicules dans un état impeccable.
+                </p>
+            </div>
+
+    
+            <div class="footer-section services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="Prestations.html">Prestations</a></li>
+                    <li><a href="Produits.html">Produits</a></li>
+                    <li><a href="devis1.html">Devis</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShineAuto. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+
+    </header>
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="Vue/Js/Produits.js"></script>
+    <button id="btnRemonter" class="btn-remonter" title="Remonter en haut">↑</button>
+</div>
+</body>
+</html>
+
+
