@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Style global pour le corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.03),rgba(0,0,0,0.3)), url(/Vue/image/pexels-tima-miroshnichenko-6873123.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+       
+}
+
+/* Style pour le titre de la page */
+h1 {
+    text-align: center;
+    color:  #ffffff;
+}
+
+/* Style pour le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffffa3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 10s ease, background-color 3s ease;
+}
+
+/* Style pour les étiquettes et les champs du formulaire */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #f3f3f3;
+}
+
+input, select {
+    padding: 05px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+
+/* Style pour la section affichant le devis proforma */
+#proforma {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-align: center;
+}
+footer {
+    background-color: #000000; /* Couleur de fond pour le footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex; /* Utilise flexbox */
+    justify-content: center; /* Centre les éléments */
+    padding: 25px; 
+}
+ul li {
+    margin: 0 10px; /* Ajoute un espacement entre les éléments de la liste */
+}
+
+ul li a {
+    
+    width: 200px ;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 05px  05px ;
+    text-transform: uppercase;
+    margin: 10px 20px;
+    font-weight: 500;
+    transition: 0.8s ease ;
+    left: 1px; /* Positionner à gauche */
+    z-index: 1000; /* Assurer que la navigation est au-dessus du contenu */
+    
+}
+ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 10s ease, background-color 3s ease;
+   
+}
+ul li.active a {
+    background-color: #ffffff;
+    color: black;
+    border: 5;
+    border-radius: 5px
+}
+
+
+.logo a { 
+    color: #ffffff;
+    padding: 0px 20px ;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration:none ;
+    font-weight: 500;
+    text-shadow: rgb(0, 0, 0, 0.7);
+}
+.logo samp {
+    color:rgb(238, 56, 11);
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+    color: #2c2c2c;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style pour le formulaire */
+#formulaire {
+    background-color: #f3f3f3e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="submit"],
+button {
+    background-color: #b300004b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #be3131;
+    font-size: 1rem;
+}
+
+/* Style pour le devis proforma */
+#proforma {
+    background-color: #ffffff;
+    border: 1px solid #cce5ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#proforma p {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+#proforma strong {
+    color: #ffffff;
+}
+
+/* Style pour les options supplémentaires (produits, prestations, accessoires) */
+#optionSupplementaire {
+    margin-top: 20px;
+}
+
+select,
+input[type="number"] {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  .fade-in.show {
+    opacity: 1;
+  }
+  
+  
+/* Ajoutez cette section pour les animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.Principale {
+    animation: slideIn 1s ease-out;
+}
+
+.Titre h1 {
+    animation: fadeIn 2s ease-in;
+}
+
+.page {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+}
+  
+.page.fade-out {
+    opacity: 0;
+}

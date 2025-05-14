@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Changer l'alignement pour inclure la navigation */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.03),rgba(0,0,0,0.3)), url(/Vue/image/2096013.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.Principale {
+    width: 50%; /* Prendre toute la largeur */
+    padding: 20px 60px; /* Espacement autour de la navigation */
+    position: fixed; /* Fixer la navigation en haut */
+    top: 0; /* Positionner en haut */
+    left: 10; /* Positionner à gauche */
+    z-index: 1000; /* Assurer que la navigation est au-dessus du contenu */
+}
+.logo a { 
+    color: #ffffff;
+    padding: 0px 20px ;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration:none ;
+    font-weight: 500;
+    text-shadow: rgb(0, 0, 0, 0.7);
+}
+.logo samp {
+    color:rgb(238, 56, 11);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style: none;
+    display: flex; /* Utilise flexbox */
+    justify-content: center; /* Centre les éléments */
+    padding: 15px; 
+}
+ul li {
+    margin: 0 10px; /* Ajoute un espacement entre les éléments de la liste */
+}
+
+ul li a {
+    
+    width: 50px ;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 05px  05px ;
+    text-transform: uppercase;
+    margin: 10px 20px;
+    font-weight: 500;
+    transition: 0.8s ease ;
+    left: 100px; /* Positionner à gauche */
+    z-index: 1000; /* Assurer que la navigation est au-dessus du contenu */
+    
+}
+ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border: 5;
+    border-radius: 5px;
+  
+}
+
+.Principale a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Principale a:hover {
+    text-decoration: none; /* Souligner au survol */
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+    margin-top: 100px; /* Ajouter un margin-top pour éviter le contenu caché derrière la navigation */
+}
+
+.login-header {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.login-header header {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.input-box .input-field {
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(205, 26, 26, 0.05);
+    outline: none;
+    transition: .3s;
+}
+
+::placeholder {
+    font-weight: 500;
+    color: #282727;
+}
+
+.input-field:focus {
+    width: 105%;
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#check {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section a {
+    color: #ffffff;
+}
+
+.input-submit {
+    position: relative;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 60px;
+    background: #141414;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-submit label {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #c73737;
+    transform: scale(1.05, 1);
+}
+
+.sign-up-link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #ff0000;
+}
+
+.sign-up-link a {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+
+
+/* Ajoutez cette section pour les animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.Principale {
+    animation: slideIn 1s ease-out;
+}
+
+.Titre h1 {
+    animation: fadeIn 2s ease-in;
+}
+
+.page {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+}
+  
+.page.fade-out {
+    opacity: 0;
+}
+
+
+/*Footer */
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 180px;
+    
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+    font-weight: 500;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #a7a7a7;
+}
+
+.footer-section a {
+    color: #bbb;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Icon Styles (font awesome) */
+i {
+    margin-right: 10px;
+}
+
+  

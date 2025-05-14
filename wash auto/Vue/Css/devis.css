@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.devis-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+header .header-right {
+    text-align: right;
+}
+
+.client-info,
+.devis-details {
+    margin-top: 20px;
+}
+
+.devis-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.devis-details table th, .devis-details table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.devis-details table th {
+    background-color: #f8f8f8;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    text-align: center;
+}
